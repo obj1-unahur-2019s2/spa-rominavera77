@@ -1,7 +1,7 @@
 import personas.*
 
 object spa {
-	var ultimoCliente = "personas"
+	var ultimoCliente = persona
 	
 	method atender(persona) {
 		// hay que hacer que la persona reciba masajes y se dé un baño de vapor
@@ -13,7 +13,7 @@ object spa {
 	}
 	
 	method premioPorVolver(persona){
-		if(ultimoCliente==persona){
+		if(ultimoCliente == persona){
 			persona.recibirMasajes(); 
 			persona.recibirMasajes(); 
 		}
